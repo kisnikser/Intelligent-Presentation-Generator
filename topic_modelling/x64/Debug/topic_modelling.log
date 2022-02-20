@@ -1,0 +1,5 @@
+﻿  cpp_program.cpp
+C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\cpp_program.cpp(17,17): error C2664: 'int fclose(FILE *)': cannot convert argument 1 from 'char [10]' to 'FILE *'
+C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\cpp_program.cpp(17,9): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(152,26): message : see declaration of 'fclose'
+C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\cpp_program.cpp(12,7): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
