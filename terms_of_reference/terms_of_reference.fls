@@ -678,10 +678,6 @@ INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
-INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
-INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
-INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
@@ -1409,6 +1405,7 @@ INPUT terms_of_reference.out
 INPUT .\terms_of_reference.out
 INPUT .\terms_of_reference.out
 OUTPUT terms_of_reference.out
+INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lacc1440.tfm
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1728.tfm
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm2986.tfm
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lacc2986.tfm
@@ -1485,6 +1482,8 @@ INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-sup
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1728.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx2074.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx2074.pfb
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfcc1440.pfb
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfcc1440.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfcc2986.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfcc2986.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1000.pfb
