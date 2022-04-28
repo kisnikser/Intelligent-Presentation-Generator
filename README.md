@@ -1,4 +1,4 @@
-# Presentation-Generator
+# Intelligent-Presentation-Generator
 
 Проект по программированию на C++ и Python с использованием ООП и машинного обучения.
 
