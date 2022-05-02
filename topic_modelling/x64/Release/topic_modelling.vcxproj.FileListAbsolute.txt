@@ -1,4 +1,0 @@
-C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\x64\Release\topic_modelling.exe
-C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\x64\Release\topic_modelling.vcxproj.MdMergeInputs.cache
-C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\x64\Release\topic_modelling.vcxproj.cppwinrt_plat.cache
-C:\Users\kisnikser\Documents\GitHub\Presentation-Generator\topic_modelling\x64\Release\topic_modelling.vcxproj.cppwinrt_comp.cache
