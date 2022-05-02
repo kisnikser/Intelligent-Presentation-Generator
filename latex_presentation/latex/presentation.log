@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.15)  22 APR 2022 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.24)  2 MAY 2022 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./presentation.tex
 (presentation.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24>
+L3 programming layer <2022-04-20>
 (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
 
@@ -996,7 +996,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 )
 (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count333
 \l__pdf_internal_box=\box75
 )
@@ -1203,25 +1203,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 No file presentation.nav.
 (frames.tex [1
 
-{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
-
-(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
-
-(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 7.
-
-(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1m
-athkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-) [2
+{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
 ] [3
 
@@ -1246,21 +1228,19 @@ Package rerunfilecheck Info: Checksums for `presentation.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22225 strings out of 478582
- 435732 string characters out of 2842456
- 671481 words of memory out of 3000000
- 39943 multiletter control sequences out of 15000+600000
- 478689 words of font info for 54 fonts, out of 8000000 for 9000
+ 22164 strings out of 478547
+ 434481 string characters out of 2839947
+ 674253 words of memory out of 3000000
+ 39940 multiletter control sequences out of 15000+600000
+ 472343 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,122p,443b,556s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 128i,14n,122p,1041b,556s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm
 -super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmss10.pfb><C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/kisnikser/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on presentation.pdf (3 pages, 47024 bytes).
+blic/cm-super/sfss1095.pfb>
+Output written on presentation.pdf (3 pages, 35778 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

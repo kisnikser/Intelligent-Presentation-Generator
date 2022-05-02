@@ -156,16 +156,12 @@ sections = makeSections()
 names = printSections(sections)
 
 
-# In[52]:
-
-
-def makeLatexPresentation(names):
-    cmd = "..\\latex_presentation\\main.exe " + " ".join(names)
-    os.system(cmd)
-
-
 # In[53]:
 
+os.system("move topic_modelling\\section* latex_presentation")
+os.chdir(".\\latex_presentation")
+os.system(".\main.exe " + " ".join(names))
 
-makeLatexPresentation(names)
 
+
+# %%
