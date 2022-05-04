@@ -26,7 +26,8 @@ int main(int argc, char* argv[])
 
     presentation << "\\documentclass{beamer}\n"        <<
                     "\\usepackage[T2A]{fontenc}\n"     <<
-                    "\\usepackage[utf8]{inputenc}\n\n" <<
+                    "\\usepackage[utf8]{inputenc}\n"   <<
+                    "\\usetheme{Berlin}\n\n"           <<
                     "\\begin{document}\n\t"            <<
                     "\\input{frames.tex}\n"            <<
                     "\\end{document}";
@@ -51,7 +52,7 @@ int main(int argc, char* argv[])
             exit(-4);
         }
 
-        char buffer[1000];
+        char buffer[100000];
         section.getline(buffer, sizeof(buffer));
         
         frames << "\\begin{frame}\n\t" <<

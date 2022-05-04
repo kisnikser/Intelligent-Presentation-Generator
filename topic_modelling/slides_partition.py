@@ -21,6 +21,7 @@ from nltk.tokenize import sent_tokenize
 from pymystem3 import Mystem
 
 import os
+import sys
 
 
 # In[42]:
@@ -38,7 +39,8 @@ stop_words = stopwords.words('russian')
 # функция открытия файла на чтение
 
 def readFile():
-    with open("C:\\Users\\kisnikser\\Documents\\GitHub\\Intelligent-Presentation-Generator\\topic_modelling\\text.txt", "r", encoding = "utf-8") as doc:
+    file = sys.argv[1]
+    with open(file, "r", encoding = "utf-8") as doc:
         text = doc.read()
         doc.close()
     return text
@@ -144,7 +146,7 @@ def printSections(sections):
     for i, section in enumerate(sections):
         name = "section" + str(i + 1) + ".txt"
         names.append(name)
-        with open(".\\topic_modelling\\" + name, "w", encoding = "utf-8") as fout:
+        with open("..\\topic_modelling\\" + name, "w", encoding = "utf-8") as fout:
             fout.write(section)
     return names
 
@@ -158,8 +160,8 @@ names = printSections(sections)
 
 # In[53]:
 
-os.system("move topic_modelling\\section* latex_presentation")
-os.chdir(".\\latex_presentation")
+os.system("move ..\\topic_modelling\\section* ..\\latex_presentation")
+os.chdir("..\\latex_presentation")
 os.system(".\main.exe " + " ".join(names))
 
 
