@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
+# In[114]:
 
 
 # подключаем необходимые библиотеки
@@ -24,16 +24,26 @@ import os
 import sys
 
 
-# In[42]:
+# In[115]:
+
+
+# дополнительные стоп-слова русского языка
+with open("..\\topic_modelling\\stopwords_ru.txt", "r", encoding = "utf-8") as doc:
+    stop_words_ru = doc.read().splitlines()
+    doc.close
+
+
+# In[116]:
 
 
 # загружаем словарь часто используемых в русском языке слов
 
 nltk.download('stopwords')
 stop_words = stopwords.words('russian')
+stop_words.extend(stop_words_ru)
 
 
-# In[43]:
+# In[117]:
 
 
 # функция открытия файла на чтение
@@ -46,7 +56,7 @@ def readFile():
     return text
 
 
-# In[44]:
+# In[118]:
 
 
 # функция предобработки текста - возвращает (список предложений, токенизированный текст, список слов)
@@ -64,7 +74,7 @@ def preprocessText(text):
     return sentences, preprocessed_text, words
 
 
-# In[45]:
+# In[119]:
 
 
 # функция создания и получения предсказаний модели - возвращает словарь с вероятностями принадлежности слов к темам
@@ -73,7 +83,7 @@ def getWordTopics(words):
     dictionary = corpora.Dictionary([words]) # создаем словарь из текста (dictionary.token2id - пары: word - id)
     corpus = [dictionary.doc2bow(words)]     # создаем корпус слов (пары: id - count)
     # обучаем LDA модель (по умолчанию пока что стоит 3 темы в тексте)
-    LDA_model = LdaModel(corpus = corpus, id2word = dictionary, num_topics = 3, passes = 1)
+    LDA_model = LdaModel(corpus = corpus, id2word = dictionary, num_topics = 3)
     # создаем словарь с вероятностями принадлежности слов к темам (пары: word - (p1, p2, ..., pn))
     words_topics_dict = dict()
     for id_, word in enumerate(list(dictionary.token2id)):
@@ -83,7 +93,32 @@ def getWordTopics(words):
     return words_topics_dict
 
 
-# In[46]:
+# In[120]:
+
+
+def getSentencesTopics(preprocessed_text):
+    dictionary = corpora.Dictionary(preprocessed_text)
+    corpus = [dictionary.doc2bow(sentence) for sentence in preprocessed_text]
+    # обучаем LDA модель (по умолчанию пока что стоит 3 темы в тексте)
+    LDA_model = LdaModel(corpus = corpus, id2word = dictionary, num_topics = 4, alpha = 'auto', passes = 100)
+    # создаем словарь с вероятностями принадлежности предложений к темам (пары: sentence - (p1, p2, ..., pn))
+    sentences_topics_dict = dict()
+    for k, sentence in enumerate(preprocessed_text):
+        sentence_topics = LDA_model.get_document_topics(dictionary.doc2bow(sentence), minimum_probability = 0)
+        sentences_topics_dict[k] = [prob[1] for prob in sentence_topics]
+    return sentences_topics_dict
+
+
+# In[121]:
+
+
+def getSentencesDistances(sentences_topics_dict):
+    count = len(sentences_topics_dict)
+    sentences_distances = [distance.cosine(sentences_topics_dict.get(u), sentences_topics_dict.get(v))                           for (u, v) in zip(range(count - 1), range(1, count))]
+    return sentences_distances
+
+
+# In[122]:
 
 
 # функция определения расстояния между соседними предложениями - возвращает список косинусных расстояний
@@ -100,7 +135,7 @@ def getDistances(words_topics_dict, preprocessed_text):
     return sentences_distances
 
 
-# In[47]:
+# In[123]:
 
 
 # функция возвращает топ k-1 предложений, после которых стоит начинать новый слайд (k - количество тем)
@@ -109,7 +144,7 @@ def splitText(sentences_distances, k):
     return sorted(list(reversed(list(np.argsort(sentences_distances))))[:k-1])
 
 
-# In[48]:
+# In[124]:
 
 
 # функция разделения текста на абзацы - возвращает список абзацев
@@ -122,7 +157,7 @@ def getSections(sentences, sentences_distances, k):
     return sections
 
 
-# In[49]:
+# In[125]:
 
 
 # MAIN METHOD: функция разделения текста на абзацы (выполняет все действия последовательно)
@@ -130,13 +165,15 @@ def getSections(sentences, sentences_distances, k):
 def makeSections():
     text = readFile()
     sentences, preprocessed_text, words = preprocessText(text)
-    words_topics_dict = getWordTopics(words)
-    sentences_distances = getDistances(words_topics_dict, preprocessed_text)
+    #words_topics_dict = getWordTopics(words)
+    sentences_topics_dict = getSentencesTopics(preprocessed_text)
+    #sentences_distances = getDistances(words_topics_dict, preprocessed_text)
+    sentences_distances = getSentencesDistances(sentences_topics_dict)
     sections = getSections(sentences, sentences_distances, 3)
     return sections
 
 
-# In[50]:
+# In[126]:
 
 
 # функция записи абзацев в отдельные файлы
@@ -146,24 +183,17 @@ def printSections(sections):
     for i, section in enumerate(sections):
         name = "section" + str(i + 1) + ".txt"
         names.append(name)
-        with open("..\\topic_modelling\\" + name, "w", encoding = "utf-8") as fout:
+        with open("..\\latex_presentation\\" + name, "w", encoding = "utf-8") as fout:
             fout.write(section)
     return names
 
 
-# In[51]:
+# In[128]:
 
 
 sections = makeSections()
 names = printSections(sections)
-
-
-# In[53]:
-
 os.system("move ..\\topic_modelling\\section* ..\\latex_presentation")
 os.chdir("..\\latex_presentation")
-os.system(".\main.exe " + " ".join(names))
+os.system(".\\main.exe " + " ".join(names))
 
-
-
-# %%
