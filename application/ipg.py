@@ -5,9 +5,9 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox, QFileDialog, QLabel, QWidget
+from PyQt5.QtWidgets import QMessageBox, QFileDialog, QLabel, QWidget, QToolTip
 from PyQt5.QtCore import QTimer, Qt
-from PyQt5.QtGui import QMovie
+from PyQt5.QtGui import QMovie, QFont
 
 from tkinter import Tk # библиотка для работы с всплывающими окнами
 from tkinter.filedialog import askopenfilename, asksaveasfilename
@@ -69,7 +69,12 @@ class Ui_mainWindow(object):
             self.generate.setFont(font)
             self.generate.setStyleSheet("background-color: rgb(51, 51, 178);\n"
     "color: rgb(230, 230, 230);")
+            self.generate.setToolTip("Сгенерировать презентацию")
+            
+            QToolTip.setFont(QFont('CMU Sans Serif', 10))
+            
             self.generate.setObjectName("generate")
+
             self.choose = QtWidgets.QPushButton(self.centralwidget)
             self.choose.setGeometry(QtCore.QRect(50, 490, 151, 41))
             font = QtGui.QFont()
@@ -82,6 +87,8 @@ class Ui_mainWindow(object):
     "color: rgb(230, 230, 230);\n"
     "")
             self.choose.setObjectName("choose")
+            self.choose.setToolTip("Выбрать документ для создания презентации")
+
             self.label_c1 = QtWidgets.QLabel(self.centralwidget)
             self.label_c1.setGeometry(QtCore.QRect(0, 0, 841, 25))
             self.label_c1.setStyleSheet("background-color: rgb(5, 12, 145);\n"
@@ -135,7 +142,8 @@ class Ui_mainWindow(object):
     "\n"
     "color: rgb(230, 230, 230);\n"
     "")
-
+            self.save_as.setToolTip("Сохранить документ")
+            
             icon = QtGui.QIcon.fromTheme("pip")
             self.save_as.setIcon(icon)
             self.save_as.setAutoDefault(False)
@@ -229,8 +237,6 @@ class Ui_mainWindow(object):
     "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#e6e6e6;\">  Welcome</span></p></body></html>"))
 
 
-
-
         def add_functions(self):
             self.choose.clicked.connect(self.browse_folder)
             self.save_as.clicked.connect(self.file_save_as)   
@@ -241,8 +247,6 @@ class Ui_mainWindow(object):
             Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
             self.filename = askopenfilename(filetypes=(("TXT files", "*.txt"),
                     ("All files", "*.*"))) # show an "Open" dialog box and return the path to the selected file
-            print(self.filename)
-            print(type(self.filename))
 
         def file_save_as(self):
                 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
@@ -274,7 +278,7 @@ class Ui_mainWindow(object):
             inst.setDetailedText("just do it")
 
             inst.exec_()
-
+        
     
     
 if __name__ == "__main__":
@@ -297,4 +301,16 @@ if __name__ == "__main__":
     
     mainWindow.show()
     sys.exit(app.exec_())
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 

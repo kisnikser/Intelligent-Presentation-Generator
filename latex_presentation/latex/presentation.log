@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.15)  6 MAY 2022 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.15)  6 MAY 2022 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,12 +1203,17 @@ or-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 No file presentation.nav.
-(frames.tex [1
+(frames.tex
+Overfull \vbox (60.60129pt too high) detected at line 3
+ []
 
-{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+[1
+
+{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[2
 
 ]
-Overfull \vbox (224.40962pt too high) detected at line 11
+Overfull \vbox (129.20958pt too high) detected at line 11
  []
 
 [3
@@ -1236,15 +1241,15 @@ Package rerunfilecheck Info: Checksums for `presentation.out':
 Here is how much of TeX's memory you used:
  22356 strings out of 478582
  442936 string characters out of 2842456
- 687636 words of memory out of 3000000
+ 684674 words of memory out of 3000000
  40086 multiletter control sequences out of 15000+600000
  472343 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,3307b,562s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 128i,15n,122p,2599b,562s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm
 -super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/cm-super/sfss1095.pfb>
-Output written on presentation.pdf (3 pages, 38951 bytes).
+Output written on presentation.pdf (3 pages, 38943 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
