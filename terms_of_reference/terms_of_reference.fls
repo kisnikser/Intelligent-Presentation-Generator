@@ -1,6 +1,6 @@
-PWD c:\Users\kisnikser\Documents\GitHub\Presentation-Generator\terms_of_reference
+PWD c:\Users\kisnikser\Documents\GitHub\Intelligent-Presentation-Generator\terms_of_reference
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\kisnikser\Documents\GitHub\Presentation-Generator\terms_of_reference\terms_of_reference.tex
+INPUT c:\Users\kisnikser\Documents\GitHub\Intelligent-Presentation-Generator\terms_of_reference\terms_of_reference.tex
 OUTPUT terms_of_reference.log
 INPUT .\preamble.tex
 INPUT preamble.tex
@@ -1468,6 +1468,11 @@ INPUT terms_of_reference.toc
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1440.tfm
 OUTPUT terms_of_reference.toc
 INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1000.tfm
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
+INPUT C:\Users\kisnikser\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\latt1440.tfm
 INPUT terms_of_reference.aux
 INPUT .\terms_of_reference.out
 INPUT .\terms_of_reference.out
@@ -1492,3 +1497,5 @@ INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-sup
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1440.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1728.pfb
 INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1728.pfb
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt1440.pfb
+INPUT C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt1440.pfb
