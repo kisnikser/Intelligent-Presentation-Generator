@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[300]:
-
-
-#os.chdir("..\\topic_modelling")
-
-
-# In[279]:
+# In[31]:
 
 
 # подключаем необходимые библиотеки
@@ -34,11 +28,9 @@ import sys
 # библиотеки для поиска изображений в интернете
 from bing_image_downloader import downloader
 #from PIL import Image
-#-----------------------------------------
-from translate import Translator
 
 
-# In[280]:
+# In[32]:
 
 
 # дополнительные стоп-слова русского языка
@@ -47,7 +39,7 @@ with open("..\\topic_modelling\\stopwords_ru.txt", "r", encoding = "utf-8") as d
     doc.close
 
 
-# In[281]:
+# In[33]:
 
 
 # загружаем словарь часто используемых в русском языке слов
@@ -57,20 +49,20 @@ stop_words = stopwords.words('russian')
 stop_words.extend(stop_words_ru)
 
 
-# In[282]:
+# In[34]:
 
 
 # функция открытия файла на чтение
 
 def readFile():
-    file = "..\\topic_modelling\\texts\\Gun.txt"
+    file = sys.argv[1]
     with open(file, "r", encoding = "utf-8") as doc:
         text = doc.read()
         doc.close()
     return text
 
 
-# In[283]:
+# In[35]:
 
 
 # функция предобработки текста - возвращает (список предложений, токенизированный текст, список слов)
@@ -88,7 +80,7 @@ def preprocessText(text):
     return sentences, preprocessed_text, words
 
 
-# In[284]:
+# In[36]:
 
 
 # функция возвращает словарь с вероятностями принадлежности предложений к темам (пары: sentence - (p1, p2, ..., pn))
@@ -107,7 +99,7 @@ def getSentencesTopics(preprocessed_text, n):
     return sentences_topics_dict, LDA_model
 
 
-# In[285]:
+# In[37]:
 
 
 # функция возвращает расстояния между соседними предложениями
@@ -118,7 +110,7 @@ def getSentencesDistances(sentences_topics_dict):
     return sentences_distances
 
 
-# In[286]:
+# In[38]:
 
 
 # функция возвращает топ n-1 предложений, после которых стоит начинать новый слайд (n - количество тем)
@@ -127,7 +119,7 @@ def splitText(sentences_distances, n):
     return sorted(list(reversed(list(np.argsort(sentences_distances))))[:n-1])
 
 
-# In[287]:
+# In[39]:
 
 
 # функция возвращает ключевые слова каждого абзаца
@@ -151,7 +143,7 @@ def getKeyWords(LDA_model, sentences_topics_dict, n):
     return sections_words
 
 
-# In[288]:
+# In[40]:
 
 
 # функция разделения текста на абзацы - возвращает список абзацев
@@ -165,7 +157,7 @@ def getSections(sentences, sentences_distances, n):
     return sections
 
 
-# In[289]:
+# In[41]:
 
 
 def getImages(sections_words):
@@ -176,7 +168,7 @@ def getImages(sections_words):
         os.system("rmdir /S /Q ..\\topic_modelling\\images\\image_" + str(k))
 
 
-# In[290]:
+# In[42]:
 
 
 # MAIN METHOD: функция разделения текста на абзацы (выполняет все действия последовательно)
@@ -192,7 +184,7 @@ def makeSections(n):
     return sections, sections_words
 
 
-# In[291]:
+# In[43]:
 
 
 # функция записи абзацев в отдельные файлы
@@ -204,18 +196,29 @@ def printSections(sections):
         names.append(name)
         with open("..\\latex_presentation\\" + name, "w", encoding = "utf-8") as fout:
             fout.write(section)
+            fout.close()
     return names
 
 
-# In[301]:
+# In[44]:
+
+
+# функция записывает названия слайдов в отдельный файл
+
+def writeKeyWords(keywords):
+    with open("..\\latex_presentation\\keywords.txt", "w", encoding = "utf-8") as fout:
+        for word in keywords:
+            fout.write(word + "\n")
+        fout.close()
+
+
+# In[47]:
 
 
 sections, sections_words = makeSections(3)
 sections_words_capitalized = [word.capitalize() for word in sections_words]
-translator = Translator(from_lang = "Russian", to_lang = "English")
-english_words = [translator.translate(word) for word in sections_words_capitalized]
+writeKeyWords(sections_words_capitalized)
 names = printSections(sections)
-os.system("move ..\\topic_modelling\\section* ..\\latex_presentation")
 os.chdir("..\\latex_presentation")
-os.system(".\\main.exe " + str(len(sections)) + " " + " ".join(names) + " " + " ".join(english_words))
+os.system(".\\main.exe " + " ".join(names))
 

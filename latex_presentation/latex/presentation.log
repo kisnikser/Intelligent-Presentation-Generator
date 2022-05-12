@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  12 MAY 2022 04:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  12 MAY 2022 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1204,41 +1204,32 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 No file presentation.nav.
 (frames.tex
-<../topic_modelling/images/image_0.jpg, id=13, 534.99875pt x 803.0pt>
+<../topic_modelling/images/image_0.jpg, id=13, 493.3632pt x 370.0224pt>
 File: ../topic_modelling/images/image_0.jpg Graphic file (type jpg)
 <use ../topic_modelling/images/image_0.jpg>
 Package pdftex.def Info: ../topic_modelling/images/image_0.jpg  used on input l
 ine 6.
-(pdftex.def)             Requested size: 106.99785pt x 160.59715pt.
+(pdftex.def)             Requested size: 245.83282pt x 184.37273pt.
  [1
 
 {C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../topic
 _modelling/images/image_0.jpg>]
-<../topic_modelling/images/image_1.jpg, id=42, 542.025pt x 196.735pt>
+<../topic_modelling/images/image_1.jpg, id=42, 1445.4pt x 813.0375pt>
 File: ../topic_modelling/images/image_1.jpg Graphic file (type jpg)
 <use ../topic_modelling/images/image_1.jpg>
 Package pdftex.def Info: ../topic_modelling/images/image_1.jpg  used on input l
 ine 13.
-(pdftex.def)             Requested size: 108.40308pt x 39.3463pt.
+(pdftex.def)             Requested size: 245.83282pt x 138.27657pt.
  [2
 
  <../topic_modelling/images/image_1.jpg>]
-<../topic_modelling/images/image_2.jpg, id=69, 1686.3pt x 1122.1925pt>
+<../topic_modelling/images/image_2.jpg, id=69, 803.0pt x 534.99875pt>
 File: ../topic_modelling/images/image_2.jpg Graphic file (type jpg)
 <use ../topic_modelling/images/image_2.jpg>
 Package pdftex.def Info: ../topic_modelling/images/image_2.jpg  used on input l
 ine 20.
-(pdftex.def)             Requested size: 337.25403pt x 224.43452pt.
-
-Overfull \hbox (29.96416pt too wide) in paragraph at lines 20--20
- [] 
- []
-
-
-Overfull \vbox (50.61772pt too high) detected at line 20
- []
-
-[3
+(pdftex.def)             Requested size: 245.83282pt x 163.78255pt.
+ [3
 
  <../topic_modelling/images/image_2.jpg>])
 \tf@nav=\write6
@@ -1263,7 +1254,7 @@ Package rerunfilecheck Info: Checksums for `presentation.out':
 Here is how much of TeX's memory you used:
  22439 strings out of 478547
  445183 string characters out of 2839948
- 683474 words of memory out of 3000000
+ 683475 words of memory out of 3000000
  40196 multiletter control sequences out of 15000+600000
  473164 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1271,7 +1262,7 @@ Here is how much of TeX's memory you used:
 {C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm
 -super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/cm-super/sfss1440.pfb>
-Output written on presentation.pdf (3 pages, 341142 bytes).
+Output written on presentation.pdf (3 pages, 330611 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
