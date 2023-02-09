@@ -1,16 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  12 MAY 2022 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  13 MAY 2022 20:33
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/kisnikser/Documents/GitHub/Intelligent-Presentation-Generator/latex_presentation/latex/document.tex
-(c:/Users/kisnikser/Documents/GitHub/Intelligent-Presentation-Generator/latex_presentation/latex/document.tex
+**./document.tex
+(document.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-20> (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
+L3 programming layer <2022-04-20>
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle
+.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
-) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+)
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -30,13 +32,15 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen139
-) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.def
+
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
 File: t2aenc.dfu 2021/06/21 v1.2n UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -235,16 +239,23 @@ File: t2aenc.dfu 2021/06/21 v1.2n UTF-8 support
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 112.
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+12.
+
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+)) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.st
+y
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+)
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.s
+ty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extsizes.sty
+)
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extsizes.s
+ty
 Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
 
 
@@ -262,14 +273,19 @@ LaTeX Info: Redefining \large on input line 82.
 LaTeX Info: Redefining \Large on input line 83.
 LaTeX Info: Redefining \LARGE on input line 84.
 LaTeX Info: Redefining \huge on input line 85.
-)) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+))
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.s
+ty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+)
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -284,11 +300,16 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen146
 \Gm@layoutvoffset=\dimen147
 \Gm@dimlist=\toks19
- (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.c
+fg))
+(C:\Users\kisnikser\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
+-pdftex.def
 File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count196
 \l__pdf_internal_box=\box50
-) (document.aux)
+)
+No file document.aux.
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -307,7 +328,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -343,43 +363,46 @@ LaTeX Font Info:    ... okay on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (sections.tex
-Overfull \hbox (5.481pt too wide) in paragraph at lines 5--6
-[]\T2A/cmr/m/n/12 Хакер - чрезвычайно квалифицированный ИТ- специалист, человек, который понимает
- []
-
-
-Overfull \hbox (14.5731pt too wide) in paragraph at lines 5--6
-\T2A/cmr/m/n/12 самые основы работы компьютерных систем. Изначально хакерами называли программистов,
+Overfull \hbox (37.95285pt too wide) in paragraph at lines 5--6
+[]\T2A/cmr/m/n/12 Изначально хакерами называли программистов, которые исправлял
+и ошибки в программном
  []
 
 
 Overfull \hbox (26.64655pt too wide) in paragraph at lines 8--9
-\T2A/cmr/m/n/12 обычно с целью осуществления бесплатных звонков. Людей, специализирующихся на фрикинге,
+\T2A/cmr/m/n/12 обычно с целью осуществления бесплатных звонков. Людей, специал
+изирующихся на фрикинге,
  []
 
 
 Overfull \hbox (19.30888pt too wide) in paragraph at lines 8--9
-\T2A/cmr/m/n/12 неправомерных действиях телефон с целью оказать психологическое воздействие на конечного
+\T2A/cmr/m/n/12 неправомерных действиях телефон с целью оказать психологическое
+ воздействие на конечного
  []
 
 
 Overfull \hbox (33.49994pt too wide) in paragraph at lines 8--9
-\T2A/cmr/m/n/12 абонента. В последнее время под фрикингом стали подразумевать различный взлом электронных
+\T2A/cmr/m/n/12 абонента. В последнее время под фрикингом стали подразумевать р
+азличный взлом электронных
  []
 
 ) [1
 
-{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (document.aux) ) 
+{C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(document.aux) ) 
 Here is how much of TeX's memory you used:
- 1998 strings out of 478547
- 36523 string characters out of 2839948
- 318883 words of memory out of 3000000
+ 1994 strings out of 478547
+ 36091 string characters out of 2839948
+ 318892 words of memory out of 3000000
  20248 multiletter control sequences out of 15000+600000
  471983 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,62p,947b,204s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on document.pdf (1 page, 32051 bytes).
+ 55i,5n,62p,874b,204s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
+ps/cm-super/cm-super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/kisnikser/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on document.pdf (1 page, 32343 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

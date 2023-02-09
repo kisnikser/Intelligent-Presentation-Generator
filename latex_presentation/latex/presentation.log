@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  12 MAY 2022 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.4)  13 MAY 2022 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1214,22 +1214,26 @@ ine 6.
 
 {C:/Users/kisnikser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../topic
 _modelling/images/image_0.jpg>]
-<../topic_modelling/images/image_1.jpg, id=42, 1445.4pt x 813.0375pt>
+<../topic_modelling/images/image_1.jpg, id=42, 1284.8pt x 722.7pt>
 File: ../topic_modelling/images/image_1.jpg Graphic file (type jpg)
 <use ../topic_modelling/images/image_1.jpg>
 Package pdftex.def Info: ../topic_modelling/images/image_1.jpg  used on input l
 ine 13.
-(pdftex.def)             Requested size: 245.83282pt x 138.27657pt.
+(pdftex.def)             Requested size: 245.83282pt x 138.27382pt.
  [2
 
  <../topic_modelling/images/image_1.jpg>]
-<../topic_modelling/images/image_2.jpg, id=69, 803.0pt x 534.99875pt>
+<../topic_modelling/images/image_2.jpg, id=69, 78.89474pt x 162.6075pt>
 File: ../topic_modelling/images/image_2.jpg Graphic file (type jpg)
 <use ../topic_modelling/images/image_2.jpg>
 Package pdftex.def Info: ../topic_modelling/images/image_2.jpg  used on input l
 ine 20.
-(pdftex.def)             Requested size: 245.83282pt x 163.78255pt.
- [3
+(pdftex.def)             Requested size: 245.83282pt x 506.70314pt.
+
+Overfull \vbox (319.28633pt too high) detected at line 20
+ []
+
+[3
 
  <../topic_modelling/images/image_2.jpg>])
 \tf@nav=\write6
@@ -1262,7 +1266,7 @@ Here is how much of TeX's memory you used:
 {C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm
 -super-t2a.enc}<C:/Users/kisnikser/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/cm-super/sfss1440.pfb>
-Output written on presentation.pdf (3 pages, 330611 bytes).
+Output written on presentation.pdf (3 pages, 302623 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
